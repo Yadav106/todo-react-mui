@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+}
+
+
+
+#root {
+    height: 100vh;
+    background-color: white;
+}
+
+.page {
+    background-color: white;
+    height: 100vh;
+}
+
+.inputs {
+    display: flex;
+    justify-content: center;
+}
+
+main {
+    margin: 10px;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.editIcon {
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.todo--inputs {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.toolbar {
+    justify-content: space-between;
+}
+
+.toggle--button {
+    float: left;
+}
+
+.taskItem {
+    width: 900px;
+    overflow-wrap: break-word;
+    padding: 0px 5px;
+}
+
+.collapse {
+    margin-bottom: 10px;
+    border-radius: 10px;
+    background-color: #67b8f6;
+    border: 1px solid black;
+    padding: 5px;
+}
+
+@media only screen and (max-width: 600px) {
+    .taskItem {
+        width: 350px;
+        overflow-wrap: break-word;
+    }
+}
+
+@media only screen and (max-width: 950px) and (min-width: 600px) {
+    .taskItem {
+        width: 550px;
+        overflow-wrap: break-word;
+    }
+}
